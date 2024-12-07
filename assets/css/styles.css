@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Young Serif;
+    src:
+        local("Young Serif"),
+        url("../fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Outfit;
+    src:
+        local("Outfit"),
+        url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Outfit;
+    src:
+        local("Outfit"),
+        url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: Outfit;
+    src:
+        local("Outfit"),
+        url("../fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+    font-weight: 700;
+}
+:root {
+    --font-outfit: "Outfit", sans-serif;
+    --font-young-serif: "Young Serif", serif;
+    --font-size: 16;
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-200: hsl(332, 51%, 95%);
+    --rose-50: hsl(330, 100%, 98%);
+    --link: hsl(228, 45%, 44%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    /* font-size: calc(16px / 16); */
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-outfit);
+    font-weight: 400;
+    font-size: calc(16rem / var(--font-size));
+    color: var(--stone-600);
+    line-height: 1.4;
+}
+/* font family styles */
+.font-outfit-400 {
+    font-family: var(--font-outfit);
+    font-weight: 400;
+}
+.font-outfit-600 {
+    font-family: var(--font-outfit);
+    font-weight: 600;
+}
+.font-outfit-700 {
+    font-family: var(--font-outfit);
+    font-weight: 700;
+}
+.font-young-serif {
+    font-family: var(--font-young-serif);
+    font-weight: 400;
+}
+
+/* custom styles  */
+h1 {
+    font-size: calc(33rem / var(--font-size));
+}
+
+h2 {
+    font-size: calc(33rem / var(--font-size));
+    color: var(--brown-800);
+}
+
+strong {
+    font-family: var(--font-outfit);
+    font-weight: 600;
+}
+td:nth-child(2) {
+    color: var(--brown-800);
+}
+ol {
+    li {
+        letter-spacing: -0.01rem;
+        &::marker {
+            color: var(--brown-800);
+        }
+    }
+}
+
+.bg-rose-200 {
+    background: var(--rose-200);
+}
+.bg-rose-50 {
+    background: var(--rose-50);
+}
+.text-rose-800 {
+    color: var(--rose-800);
+}
+
+.recipe-content {
+    padding: 2rem;
+    p {
+        margin-block: 2rem;
+        line-height: 1.4;
+        letter-spacing: -0.002rem;
+    }
+}
+.preperation-content {
+    padding: 2rem;
+    margin-block: 1rem;
+    border-radius: 0.85rem;
+}
+.container {
+    padding-left: 1rem;
+    margin-top: 0.75rem;
+    li {
+        padding: 0.35rem;
+    }
+}
+.unsderline {
+    border: 0;
+    border-top: 1px solid var(--stone-150);
+    margin-block: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-inline: auto;
+    color: var(--stone-600);
+    tr:not(:last-child) {
+        border-bottom: 1px solid var(--stone-150);
+        padding: 1rem;
+        td {
+            padding: 0.5rem;
+        }
+    }
+}
+
+.attribution {
+    font-size: calc(13.33rem / var(--font-size));
+    text-align: center;
+}
+.attribution a {
+    color: var(--link);
+}
+main {
+    background-color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: var(--stone-100);
+        padding: 4em 33em;
+        main {
+            max-width: 768px;
+            border-radius: 2em;
+            padding: 2em;
+            picture img {
+                width: 100%;
+                margin-block: auto;
+            }
+            .recipe-content {
+                padding: 0;
+                margin-top: 2em;
+            }
+            h1 {
+                font-size: calc(46rem / var(--font-size));
+            }
+
+            h2 {
+                font-size: calc(39rem / var(--font-size));
+                color: var(--brown-800);
+            }
+        }
+    }
+}
