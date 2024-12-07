@@ -1,6 +1,6 @@
 # Frontend Mentor - Recipe page solution
 
-This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -31,7 +31,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Animati0n/frotend-omelette-recipe/index.html)
+- Solution URL: [frotend-omelette-recipe](https://animati0n.github.io/frotend-omelette-recipe/)
 
 ## My process
 
@@ -44,7 +44,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ### What I learned
 
-I learned how to code web page using sematic html.And also learned how to style for moblie-first workflow  for first time.Tried to reuse styles and new functions.Tried maximum to not use javascript and only css.   
+I learned how to code web page using sematic html.And also learned how to style for moblie-first workflow  for first time.Tried to reuse styles and new functions.Tried maximum to not use javascript and only css.
 
 ## Author
 
